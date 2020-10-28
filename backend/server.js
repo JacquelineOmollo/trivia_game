@@ -18,6 +18,7 @@ app.get("/api/quiz", (req, res) => {
 app.get("/api/quiz/:id", (req, res) => {
     const questions = quiz.find((q) => q.id === req.params.id)
     res.json(questions)
+   
 })
 
 
